@@ -7,32 +7,71 @@ body{
 	background-image: url("../images/header_background.png");
 	background-size: 100% 100%;
 	width: auto;
-	height: 240px;
+	height: 210px;
 }
+
+.header_menuContainer{
+	text-align: center;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+.header_menuList li[name="gifter"]
+{
+	float: left;
+}
+
+.header_menuList li{
+	display: inline;
+	list-style-type: none; 
+}
+
 
 .header_iconContainer
 {	
+	margin-top: 3em;
 	text-align: center;
 	display: block;
 }
 
 .header_icon
 {
-	width: 190px;
+	width: 185px;
 	height: 250px;
 }
 
 @media all and (max-width: 480px){
+
+	.header_menuContainer{
+		text-align: center;
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+
+	.header_menuList{
+		text-decoration: none;
+	}
+
+	.header_menuContainer{
+		top: 0;
+		background-image: url("../images/header_background.png");
+		background-size: 100% 100%;
+		width: auto;
+		height: 200px;
+	}
 	
 	.header_iconContainer
-	{	margin: 0;
+	{	margin: -2em;
 		text-align: center;
 		display: block;
 	}
 
 	.header_icon
 	{
-		margin: 0;
 		width: 35%;
 		height: 35%;
 	}
