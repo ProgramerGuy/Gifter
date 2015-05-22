@@ -109,12 +109,28 @@ body{
 		display: block;
 	}
 
+	.step_message{
+		font-family: 'Signika', sans-serif;
+		font-size: 1.2em;
+	}
+
+	.steps_iconTittle{
+		color:white;
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+
 		.register img{
 			width: 100px;
 		}
 
-.popular{
-	position: relative;
+		.step_message{
+		margin: 1em;
+		color: white;
+	}
+
+	.popular{
+		position: absolute;
 }
 
 
@@ -205,16 +221,6 @@ body{
 		margin-right: auto;
 	}
 
-	.steps p{
-		margin: 1em;
-		color: white;
-	}
-
-	.steps_iconTittle
-	{
-		font-size: 1.5em;
-		font-weight: 600;
-	}
 
 	.steps:after{
 		content: "";
