@@ -9,3 +9,10 @@
 	});
 
 })();
+
+$(document).ready(function()
+{
+$("#pull").click(function() {
+alert("Hola, mundo!");
+});
+});

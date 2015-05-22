@@ -2,51 +2,131 @@ body{
 	background-color: #EFF0F0;
 }
 
+@font-face{
+	font-family: 'League';
+	src: url('../fonts/League/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+	url('../fonts/League/leaguegothic-condensed-regular-webfont.woff') format('woff');
+}
+
+
 .header_menuContainer{
-	margin-top: -1em;
+	margin-top: -4em;
 	background-image: url("../images/header_background.png");
 	background-size: 100% 100%;
 	width: auto;
-	height: 210px;
-}
-
-.header_menuContainer{
-	text-align: center;
-	position: fixed;
-	right: 0;
-	left: 0;
-	top: 0;
-}
-
-.header_menuList li[name="gifter"]
-{
-	float: left;
-}
-
-.header_menuList li{
-	display: inline;
-	list-style-type: none; 
-}
-
-
-.header_iconContainer
-{	
-	margin-top: 3em;
+	height: 280px;
 	text-align: center;
 	display: block;
 }
 
-.header_icon
-{
-	width: 185px;
-	height: 250px;
+	.header_slogan{
+		padding-top: 1.3em;
+		font-family: 'League' , sans-serif;
+		color: white;
+		font-size: 4em;
+	}
+
+
+	.header_menuNav{
+	 	height: 50px;
+		top: 0;
+		left: 0;
+		right: 0;
+		background:rgba(76,76,76,0.5);
+		position: fixed;	
+	}
+
+	.header_menuItem a
+	{
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.header_menuItem a:hover
+	{
+		color: #aaa;
+	}
+
+
+	.header_tittle
+	{
+		font-family: 'PT Sans', sans-serif;
+		font-weight: 300;
+		color: white;
+		font-size: 1.1em;
+		padding-top: 0.9em;
+		padding-left: 0.5em; 
+		float: left;
+		text-align: left;
+		margin: 0;
+		top 0;
+		position: fixed;
+	}
+
+	.header_menuList{
+		font-family: 'Signika', sans-serif;
+		font-weight: 300;
+		color: white;
+		text-align: right;
+	}
+
+	.header_menuList li{
+		margin: 3em;
+		display: inline;
+		list-style-type: none;
+	}
+
+
+	.header_iconContainer
+	{	
+		margin-top: -2em;
+		display: block;
+		text-align: center;
+	}
+
+	.header_icon
+	{
+		width: 185px;
+		height: 250px;
+	}
+
+.steps_container{
+	position: absolute;
+	margin-top: 6em;
+	background-color: #2FC0D6; 
 }
+	
+	.steps{
+		display: inline-block;
+		margin: 1em;
+		text-align: center;
+		width: 300px;
+	}
+
+	.steps img{
+		width: 130px;
+		height: 100px;
+		display: block;
+	}
+
+		.register img{
+			width: 100px;
+		}
+
+.popular{
+	position: relative;
+}
+
 
 @media all and (max-width: 480px){
 
+	.header_slogan{
+		font-size: 2.8em;
+		padding-top: 2em;
+	}
+
 	.header_menuContainer{
 		text-align: center;
-		position: fixed;
 		right: 0;
 		left: 0;
 		top: 0;
@@ -57,17 +137,13 @@ body{
 	}
 
 	.header_menuContainer{
-		top: 0;
-		background-image: url("../images/header_background.png");
-		background-size: 100% 100%;
-		width: auto;
-		height: 200px;
+		height: 250px;
 	}
 	
 	.header_iconContainer
-	{	margin: -2em;
+	{	
+		margin-top: 1em;
 		text-align: center;
-		display: block;
 	}
 
 	.header_icon
@@ -75,6 +151,82 @@ body{
 		width: 35%;
 		height: 35%;
 	}
+
+	.header_menuNav
+	{
+	  	background-color: #D6D6D5;
+	  	height: 13.5em;
+	  	position: relative;
+	  	margin: 0;
+	  	padding: 0;
+	}
+
+	.header_menuNav ul
+	{
+		margin: 0;
+		padding: 0;
+	}
+		
+
+	.header_menuList{
+	   text-align: center;
+	   position: relative;
+	   margin: 0;
+	   padding: 0;
+	}
+
+	.header_menuList li{
+		margin: 0;
+		padding: 0.6em;
+		border: solid #C3C3C3 2px;
+   		display: block;
+	}
+
+	.header_tittle{
+		overflow: hidden;
+		display: none;
+	}
+
+	.step_container{
+		left: 0;
+		right: 0;
+	}
+
+
+	.steps{
+		display: block;
+		margin: 3em 0 0 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.steps img{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.steps p{
+		margin: 1em;
+		color: white;
+	}
+
+	.steps_iconTittle
+	{
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+
+	.steps:after{
+		content: "";
+	  	position: absolute;
+	  	height: 1em;
+	  	left: 0;
+	  	width: 100%;
+	  	border-bottom: solid white 0.3em;
+	}
+
+
+}
 
 
 }
