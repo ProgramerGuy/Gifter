@@ -88,25 +88,29 @@ body{
 
 	.header_icon
 	{
-		width: 185px;
+		width: 180px;
 		height: 250px;
 	}
 
 .steps_container{
-	margin-top: 7em;
+	margin-top: 12em;
 	background-color: #2FC0D6; 
+	display: inline-block;
+	width: 100%;
 }
 	
 	.steps{
+		margin-top: 1em;
 		display: inline-block;
-		margin: 1em;
 		text-align: center;
-		width: 300px;
+		width: 33%;
 	}
 
 	.steps img{
 		width: 130px;
 		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
 		display: block;
 	}
 
@@ -129,18 +133,22 @@ body{
 		margin: 1em;
 		color: white;
 		}
-
-footer{
-	display: block;
+footer
+{
+	display: inline-block;
 	bottom: 0;
     width:100%;
     margin-top: 4em;
+    margin-right: 0;
     background-color: #fff;
     font-family: 'Signika', sans-serif;
 }
+
 	.newsForm{
-		display: block;
+		display: inline-block;
 		text-align: center;
+		width: 49%;
+		margin: 0;
 	}
 
 	.newsForm_message{
@@ -150,8 +158,21 @@ footer{
 	}
 
 	.footer_message_container{
+		text-align: center;
+		display: inline-block;
 		padding-top: 3em;
 		padding-bottom: 2em;
+		width: 49%;
+		margin: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.footer_message{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		color: #888;
 	}
 
 	.footer_message_shareItem{
@@ -160,8 +181,103 @@ footer{
 		margin: 0.3em;
 	}
 
+	.rights{
+		margin-bottom: -1em;
+		padding: 0.5em;
+		color: #888;
+		text-align: center;
+		width: 100%;
+	}
+
+	.newsForm input{
+			margin-top: 1em;
+			border: none;
+			height: 2.3em;
+		}
+
+		.newsForm_email{
+			width: 90%;
+		}
+
+		.newsForm_button{
+			margin-bottom: 2em;
+			background-color: #666;
+			border: none;
+			height: 5em;
+			color: white;
+			width: 30%;
+		}
+
+		.newsForm_email::-webkit-input-placeholder{
+			color: #555;
+			text-align: center;
+		}
+
+		.newsForm_email::-moz-placeholder{
+			color: #555;
+			text-align: center;
+		}
+
+		.newsForm_email:-ms-input-placeholder{
+			color: #555;
+			text-align: center;
+		}
+
+		.newsForm_email{
+			background-color: #ddd;
+		}
+
+.video_container video{
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+.video{
+	display: block;
+	text-align: center;
+	background-color: #fff;
+}
+
+#nav-mobile{
+    display: none;
+    background: url("../images/nav-icon.png") no-repeat center center;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top:0;
+    opacity: .6;
+}
+ 
+    /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+    #nav-mobile.nav-active{
+        opacity: 1;
+    }
+
+
+video source { width: 100%; height: auto; }
+
+@media all and (max-width: 900px){
+
+	.steps{
+		width: 32%;
+	}
+
+	.register{
+		height: 100%;
+	}
+
+	#nav-mobile{ display: block; }
+
+}
+
+
+/****-----------Mobil Portrait----------------*****/
 
 @media all and (max-width: 480px){
+
 
 	.header_slogan{
 		font-size: 2.8em;
@@ -231,7 +347,8 @@ footer{
 		display: none;
 	}
 
-	.step_container{
+	.steps_container{
+		margin-top: 9em;
 		left: 0;
 		right: 0;
 	}
@@ -242,11 +359,6 @@ footer{
 		margin: 3em 0 0 0;
 		width: 100%;
 		text-align: center;
-	}
-
-	.steps img{
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 
@@ -274,6 +386,7 @@ footer{
 
 .newsForm{
 	background-color: #FFF;
+	width: 100%;
 }
 
 .newsForm input{
@@ -313,6 +426,7 @@ footer{
 	.footer_message_container{
 		background-color: #EFF0F0;
 		text-align: center;
+		width: 100%;
 	}
 
 		.footer_message{
