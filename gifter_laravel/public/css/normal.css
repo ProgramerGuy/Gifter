@@ -257,8 +257,6 @@ footer
     }
 
 
-video source { width: 100%; height: auto; }
-
 @media all and (max-width: 900px){
 
 	.steps{
