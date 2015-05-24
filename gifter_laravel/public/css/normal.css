@@ -251,7 +251,7 @@ footer
     opacity: .6;
 }
  
-    /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+    
     #nav-mobile.nav-active{
         opacity: 1;
     }
