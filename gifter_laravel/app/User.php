@@ -36,4 +36,5 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		return $this->name.' '.$this->email;
 	}
 
+
 }

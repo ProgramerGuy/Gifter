@@ -12,6 +12,15 @@ class UserController extends Controller {
 		dd($result->full_name);
 	}
 
+	public function getUsers()
+	{
+		$result = \DB::table('users')
+		->select('*')
+		->get();
+		dd($result);
+		return $result;
+	}
+
 	public function getIndex()
 	{
 		$result = \DB::table('users')

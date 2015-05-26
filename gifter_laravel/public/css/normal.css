@@ -110,7 +110,7 @@ footer{
 	.header_menuList{
 		font-weight: 300;
 		color: white;
-		text-align: right;
+		text-align: center;
 	}
 
 	.header_menuList li{
@@ -131,6 +131,12 @@ footer{
 	{
 		width: 180px;
 		height: 250px;
+	}
+
+	.header_menuLogin{
+		border: solid white 0.2em;
+		border-radius: 10%;
+		padding: 0.2em 1em 0.2em 1em;
 	}
 
 .steps_container{
@@ -155,12 +161,12 @@ footer{
 	}
 
 	.step_message{
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 
 	.steps_iconTittle{
 		color:white;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		font-weight: 600;
 	}
 
@@ -276,10 +282,10 @@ footer
 		background-color: #fff;
 	}
 
+
 .popular{
-	height: 250px;
+	height: 200px;
 	width: 100%;
-	position: relative;
 	background-color: #fff;
 	display: flex;
 	justify-content:space-around;
@@ -312,7 +318,8 @@ footer
 		width: 300px;
 		margin: 0;
 		overflow: hidden;
-		margin-right: 2em; 
+		margin-right: 2em;
+		opacity: 0.5; 
 	}
 
 		.popular_popularImage{
@@ -323,8 +330,7 @@ footer
 
 
 	.popular_container{
-		left: 0;
-		right: 0;
+		width: 50%;
 	}
 
 		.popular_tittle{
@@ -338,9 +344,26 @@ footer
 		}
 
 	.popular_rankingContainer{
-		display: none;
+	    height: 50px; 
+	    width: 200px;
+	    margin-top: 3em;
+	    font-size: 2.5em;
+	    text-align: center;
+	    display: flex;
+	    background-color: #A9CF37;
+	    padding: 0.2em; 
 	}
 
+	.popular_rankingVotes{
+		margin-top: 0;
+		margin-left: 0.5em;
+	}
+
+	.popular_rankingImage{
+		margin-left: 0.5em;
+		width: 50px;
+		height: 50px;
+	}
 
 #nav-mobile{
     display: none;
@@ -408,7 +431,7 @@ footer
 		height: 100%;
 	}
 
-	#nav-mobile{ display: block; }
+	#nav-mobile{ display: none; }
 
 	.header_menuList{
 		text-align: center;
