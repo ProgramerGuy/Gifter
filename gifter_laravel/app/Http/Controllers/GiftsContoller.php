@@ -2,6 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
 
@@ -24,10 +25,12 @@ class GiftsContoller extends Controller {
 	}
 
 	public function getUserGifts(){
+
+		$user = \Auth::user()->id;
+
 		$result = \DB::table('gifts')
 		->select('*')
-		->where('views','>','0')
-		->orderBy('views','DES')
+		->where('gift_to','=',$user)
 		->get();
 		return $result;
 	}
