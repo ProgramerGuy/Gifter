@@ -5,32 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class GiftsContoller extends Controller {
-
-	public function getItems(){
-		$result = \DB::table('gift_shops')
-		->select('*')
-		->get();
-		return $result;
-	}
-
-	public function getPopular(){
-		$result = \DB::table('gift_shops')
-		->select('*')
-		->where('views','>','0')
-		->orderBy('views','DES')
-		->get();
-		return $result;
-	}
-
-	public function getUserGifts(){
-		$result = \DB::table('gifts')
-		->select('*')
-		->where('views','>','0')
-		->orderBy('views','DES')
-		->get();
-		return $result;
-	}
+class newsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -39,8 +14,10 @@ class GiftsContoller extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$news = News::all();
+		return($news);
 	}
+
 
 	/**
 	 * Show the form for creating a new resource.
@@ -49,7 +26,7 @@ class GiftsContoller extends Controller {
 	 */
 	public function create()
 	{
-		//
+		
 	}
 
 	/**
@@ -59,7 +36,7 @@ class GiftsContoller extends Controller {
 	 */
 	public function store()
 	{
-		//
+		$news = new News;
 	}
 
 	/**

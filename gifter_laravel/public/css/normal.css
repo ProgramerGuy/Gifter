@@ -632,7 +632,35 @@ footer{
 	.rights{
 		text-align:center;
 	}
-		
+	
+	.about_container{
+		display: block;
+		width: 100%;
+		background-color: #fff;
+		height: 100%;
+	}
 
+	.about_container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.about_imageContainer{
+		margin: auto;
+	}
+
+	.about_tittle{
+		background-color: #2FC0D6;
+		height: 50px;
+		color: white;
+		font-size: 1.5em;
+		text-align: center;
+		padding-top: 0.1em;
+		padding-bottom: 1em;
+	}
+	
+	.container_about{
+		margin-bottom: 3em;
+	}
 
 }

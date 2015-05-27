@@ -25,3 +25,4 @@ Route::controllers([
 Route::resource('users','UserController@getUsers');
 Route::resource('shop-items','GiftsContoller@getItems');
 Route::resource('popular','GiftsContoller@getPopular');
+Route::resource('news','newsContoller');

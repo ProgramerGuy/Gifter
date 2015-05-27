@@ -9,6 +9,19 @@
 			 $scope.users = data;
 		 });
 	});
+
+	app.controller('newsController',function($scope,$http){
+		
+	  	$scope.items = [];
+
+	  	$scope.submit = function(){
+	  		$scope.items.push(this.email);
+	  	}
+
+		$http.get('shop-items').success(function(data) {
+			 $scope.items = data;
+		 });
+	});
 	 
 	app.controller('giftController',function($scope,$http){
 		
