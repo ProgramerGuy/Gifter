@@ -42,4 +42,14 @@
 
 	});
 
+	app.controller('userGiftController',function($scope, $http){
+
+		$scope.items = [];
+
+		$http.get('user-gifts').success(function(data){
+			$scope.items = data;
+		});
+
+	});
+
 })();

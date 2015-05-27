@@ -6,13 +6,13 @@
 
 @section('content')
 
-<section class="shop_container" ng-controller="giftController">
+<section class="shop_container" ng-controller="userGiftController">
 	<article class="shop_item" ng-repeat="item in items">
-		<h3 class="shop_itemTittle">@{{item.tittle}}</h3>
+		<h3 class="shop_itemTittle">@{{item.gift_tittle}}</h3>
 		<figure class="shop_imageContainer">
-			<img src="@{{item.image}}" alt="item shop" class="shop_itemImage">
+			<img src="@{{item.gift_image}}" alt="item shop" class="shop_itemImage">
 		</figure>
-		<p class="shop_itemDescription">@{{item.description}}</p>
+		<p class="shop_itemDescription">@{{item.gift_message}}</p>
 	</article>
 </section>
 <footer>
