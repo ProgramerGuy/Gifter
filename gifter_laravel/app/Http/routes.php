@@ -17,6 +17,11 @@ Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'users' => 'UserController',
+	'shop' => 'GiftsContoller',
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::resource('users','UserController@getUsers');
+Route::resource('shop-items','GiftsContoller@getItems');
+Route::resource('popular','GiftsContoller@getPopular');

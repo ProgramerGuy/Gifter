@@ -1,0 +1,149 @@
+.popular{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	overflow: hidden;
+}
+
+.popular_cont{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 100%
+}
+
+.header_menuContainer{
+	margin-bottom: 7em;
+}
+
+	.popular_imageContainer{
+		width: 40%;
+		height: 70%;
+		margin: 0;
+		opacity: 0.5; 
+		
+	}
+
+		.popular_popularImage{
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+	.popular_container{
+		margin: auto;
+		text-align: center;
+		width: 40%;
+		height: 70%;
+	}
+
+		.popular_tittle{
+			width: 100%;
+			font-size: 1.4em;
+		}
+
+		.popular_message{
+			font-weight: 100;
+			font-size: 1.2em;
+			color: #5B5B5B;
+		}
+
+	.popular_rankingContainer{
+	    height: 30%; 
+	    width: 100%;
+	    margin: 0;
+	    font-size: 1.9em;
+	    text-align: center;
+	}
+
+	.popular_rankingVotes{
+		margin: auto;
+		color: #555;
+	}
+
+	.popular_rankingVotes:before{
+		content: "$";
+	}
+
+	.popular_rankingImage{
+		display: none;
+	}
+
+.shop_container{
+		font-family: 'Oswald', sans-serif;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		background-color: #fff;
+	}
+
+	.shop_item{
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-bottom: 1em;
+		background-color: #FFF;
+		height: 250px;
+		overflow: hidden;
+	}
+
+	.shop_itemTittle{
+			width: 100%;
+			font-size: 1.5em;
+			color: white;
+			background-color: #2FC0D6;
+			margin: 0;
+			padding: 0.5em;
+			text-align: center;
+		}
+
+		.shop_imageContainer{
+			overflow: hidden;
+			margin: auto auto 0 auto;
+			background-color: #FFF;
+			width: 50%;
+			height: 60%;
+		}
+
+		.shop_itemImage{
+			margin-top: auto;
+			width: 100%;
+			height: 100%;
+			opacity: 0.5;
+		}
+
+		.shop_itemPrice{
+			margin-bottom: 0;
+			margin-top: auto;
+			margin-left: auto;
+			text-align: center;
+			color: white;
+			font-size: 1.3em;
+			background-color: #A9CF37;
+			width: 140px;
+			height: 35px;
+		}
+
+		.shop_itemPrice:before{
+			content: "$";
+			padding-right: 0.2em;
+		}
+
+		.shop_itemDescription{
+			font-size: 1.2em;
+			text-align: center;
+			width: 40%;
+			margin: auto;
+			margin-right: 0.1em;
+			color: #636363;
+		}
+
+@media all and (max-width: 900px){
+
+.header_menuContainer{
+	margin-bottom: 12em;
+}
+}

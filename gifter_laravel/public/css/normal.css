@@ -21,6 +21,12 @@ h2{
 	box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
 }
 
+.shop_item{
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
+	-moz-box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
+	box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
+}
+
 .steps_container{
 	-webkit-box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
 	-moz-box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
@@ -52,8 +58,13 @@ footer{
 	box-shadow: 0px 0px 3px -1px rgba(90,90,90,1);
 }
 
+.users{
+	text-align: center;
+}
+
 .header_menuContainer{
 	margin-top: -4em;
+	margin-bottom: 12em;
 	background-image: url("../images/low6.png");
 	background-position: center;
 	background-size: 100% 180%;
@@ -122,7 +133,8 @@ footer{
 
 	.header_iconContainer
 	{	
-		margin-top: -2em;
+
+		margin-top: -2em;	
 		display: block;
 		text-align: center;
 	}
@@ -346,21 +358,21 @@ footer
 	.popular_rankingContainer{
 	    height: 50px; 
 	    width: 200px;
+	    display: flex;
 	    margin-top: 3em;
 	    font-size: 2.5em;
 	    text-align: center;
-	    display: flex;
 	    background-color: #A9CF37;
 	    padding: 0.2em; 
 	}
 
 	.popular_rankingVotes{
-		margin-top: 0;
-		margin-left: 0.5em;
+		margin: auto;
+		width: 30%;
 	}
 
 	.popular_rankingImage{
-		margin-left: 0.5em;
+		margin: auto;
 		width: 50px;
 		height: 50px;
 	}
@@ -381,6 +393,8 @@ footer
 #nav-mobile.nav-active{
     opacity: 1;
 }
+
+
 
 /*****Descktop******/
 
@@ -423,6 +437,9 @@ footer
 
 @media all and (max-width: 900px){
 
+	.shop_container{
+		width: 40%;
+	}
 	.steps{
 		width: 32%;
 	}
@@ -452,6 +469,7 @@ footer
 		margin-top: 1em;
 	}
 
+
 }
 
 
@@ -467,6 +485,7 @@ footer
 
 	.header_menuContainer{
 		text-align: center;
+		height: 250px;
 		background-size: 100% 120%;
 		right: 0;
 		left: 0;
@@ -477,10 +496,6 @@ footer
 		text-decoration: none;
 	}
 
-	.header_menuContainer{
-		height: 250px;
-	}
-	
 	.header_iconContainer
 	{	
 		margin-top: 1em;
@@ -529,15 +544,13 @@ footer
 	}
 
 	.steps_container{
-		margin-top: 9em;
 		left: 0;
 		right: 0;
 	}
 
-
 	.steps{
 		position: relative;
-		margin: 3em 0 0 0;
+		margin: 2em 0 0 0;
 		width: 100%;
 		text-align: center;
 	}
@@ -552,12 +565,13 @@ footer
 	  	border-top: solid white 0.3em;
 	}
 
-	.video
-	{
+
+	.popular{
 		display: none;
 	}
 
-	.popular{
+	.video
+	{
 		display: none;
 	}
 
@@ -618,6 +632,7 @@ footer{
 	.rights{
 		text-align:center;
 	}
+		
 
 
 }

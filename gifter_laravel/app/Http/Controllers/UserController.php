@@ -17,7 +17,6 @@ class UserController extends Controller {
 		$result = \DB::table('users')
 		->select('*')
 		->get();
-		dd($result);
 		return $result;
 	}
 

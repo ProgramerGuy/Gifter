@@ -7,6 +7,22 @@ use Illuminate\Http\Request;
 
 class GiftsContoller extends Controller {
 
+	public function getItems(){
+		$result = \DB::table('gift_shops')
+		->select('*')
+		->get();
+		return $result;
+	}
+
+	public function getPopular(){
+		$result = \DB::table('gift_shops')
+		->select('*')
+		->where('views','>','0')
+		->orderBy('views','DES')
+		->get();
+		return $result;
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *

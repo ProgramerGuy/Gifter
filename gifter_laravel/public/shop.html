@@ -5,17 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<title>Gifter</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
 	<link rel="stylesheet" type="text/css" href="css/normalizer.css">
 </head>
 <nav class="header_menuNav">
 <a class="nav-mobile" id="nav-mobile" href="#"></a>
 	<ul class="header_menuList">
 		<li class="header_menuItem"><a href="#">Galeria</a></li>
-		<li class="header_menuItem"><a href="shop.html">Tienda</a></li>
+		<li class="header_menuItem"><a href="#">Tienda</a></li>
 		<li class="header_menuItem"><a href="#">Acerca</a></li>
 		<li class="header_menuItem"><a href="#">Contacto</a></li>
 		<li class="header_menuItem"><a href="#" class="header_menuLogin">Login</a></li>
@@ -30,74 +34,32 @@
 		</a>
 	</figure>
 </header>
-<body>
-<div class="container">
-	<section class="steps_container">
-		<article class="steps register">
-			<img src="images/Register2.png" alt="" class="step_icon">
-			<p class="steps_iconTittle">Registrate</p>
-			<p class="step_message">
-				Llna el formulario registrate, para disfrutar de esta novedosa app
-			</p>
-		</article>
-		<article class="steps">
-			<img src="images/Bear_icon.png" alt="" class="step_icon">
-			<p class="steps_iconTittle">Crea tu Regalo</p>
-			<p class="step_message">
-				Comienze a crear y personalizar su
-				regalo en nuestro editor
-			</p>
-		</article>
-		<article class="steps">
-			<img src="images/Mail_icon2.png" alt="" class="step_icon">
-			<p class="steps_iconTittle">Envia y Comparte</p>
-			<p class="step_message">
-				Envia tu regalo a esa persona especial
-				y comparte con la comunidad.
-			</p>
-		</article>
-	</section>
-	<section class="popular">
-		<figure class="popular_user_imageContainer">
-			<img src="images/Katie.jpg" alt="" class="popular_user_image">
-			<p class="popular_user_nickname">@Katie_89</p>
-		</figure>
+<body> 
+<section class="popular" ng-controller="popularController">
+	<article class="popular_cont" ng-repeat="item in populars">
 		<figure class="popular_imageContainer">
-			<img src="images/fox.jpeg" alt="" class="popular_popularImage">
+			<img src="{{item.image}}" alt="" class="popular_popularImage">
 		</figure>
 		<article class="popular_container">
-			<h2 class="popular_tittle">Fue un gran dia</h2>
-			<p class="popular_message">Gracias por haber estado a mi lado todo el tiempo...</p>
+			<h2 class="popular_tittle">{{item.tittle}}</h2>
+			<p class="popular_message">{{item.description}}</p>
 		</article>
 		<div class="popular_rankingContainer">
 			<img src="images/star.svg" alt="" class="popular_rankingImage">
-			<p class="popular_rankingVotes">86</p>
+			<p class="popular_rankingVotes">{{item.price}}</p>
 		</div>
-	</section>
-	<section class="video">
-		<article class="video_container">
-			<video class="video" controls>
-	  				<source src="videos/Final_2.mp4" type="video/mp4">
-			</video>
-		</article>
-		<article class="video_shareContainer">
-			<p class="video_shareMessage">Prueba esta nueva experiencia y compartelo con tus amigos</p>
-			<div class="video_share_iconContainer">
-				<img src="" alt="" class="video_share_icon">
-				<img src="" alt="" class="video_share_icon">
-				<img src="" alt="" class="video_share_icon">
-				<img src="" alt="" class="video_share_icon">
-				<img src="" alt="" class="video_share_icon">
-			</div>
-		</article>
-	</section>
-</div>
-<!-- Prueba Angular
-	<div ng-controller="GifterController as giftctl">
-		<h2>{{giftctl.gift.name}}</h2>
-		<h3>{{giftctl.gift.message}}</h3>
-	</div>
-	-->
+	</article>
+</section>
+<section class="shop_container" ng-controller="giftController">
+	<article class="shop_item" ng-repeat="item in items">
+		<h3 class="shop_itemTittle">{{item.tittle}}</h3>
+		<figure class="shop_imageContainer">
+			<img src="{{item.image}}" alt="item shop" class="shop_itemImage">
+		</figure>
+		<p class="shop_itemDescription">{{item.description}}</p>
+		<p class="shop_itemPrice">{{item.price}}</p>
+	</article>
+</section>
 	<footer>
 		<section class="newsForm">
 			<p class="newsForm_message">Resive noticias de nuevos regalos y actualizaciones</p>
