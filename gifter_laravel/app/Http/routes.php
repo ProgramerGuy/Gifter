@@ -26,6 +26,5 @@ Route::resource('users','UserController@getUsers');
 Route::resource('shop-items','GiftsContoller@getItems');
 Route::resource('popular','GiftsContoller@getPopular');
 Route::resource('user-gifts','GiftsContoller@getUserGifts');
-Route::resource('news','newsContoller');
 Route::resource('galery','GiftsContoller@getGalery');
 
