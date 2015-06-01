@@ -1,8 +1,5 @@
 @extends('temp')
 
-@section('scripts')
-
-@endsection
 
 @section('content')
 

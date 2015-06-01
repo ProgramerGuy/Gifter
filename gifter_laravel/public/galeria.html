@@ -1,20 +1,24 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" ng-app="gifter">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Signika:700,300,400,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<title>Gifter</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normal.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
 	<link rel="stylesheet" type="text/css" href="css/normalizer.css">
 </head>
 <nav class="header_menuNav">
-<a class="nav-mobile" id="nav-mobile" ></a>
+<a class="nav-mobile" id="nav-mobile" href="#"></a>
 	<ul class="header_menuList">
-		<li class="header_menuItem"><a href="galeria.html">Galeria</a></li>
+		<li class="header_menuItem"><a href="#">Galeria</a></li>
 		<li class="header_menuItem"><a href="shop.html">Tienda</a></li>
 		<li class="header_menuItem"><a href="About.html">Acerca</a></li>
 		<li class="header_menuItem"><a href="home" class="header_menuLogin">Login</a></li>
@@ -24,35 +28,23 @@
 	<p class="header_tittle ">Gifter</p>
 	<p class="header_slogan">Una nueva forma de dar un regalo</p>
 	<figure class="header_iconContainer">
-		<a href="home.html" ><img src="images/Logo-Gifter.png" class="header_icon"/></a>
+		<a href="home.html">
+			<img src="images/Logo-Gifter.png" class="header_icon"/>
+		</a>
 	</figure>
 </header>
-<body>
-<div class="container_about">
-	<section class="about_tittle">
-		<article >
-                <p>
-	         Acerca de
-			</p>
-		</article>
-	</section>
-	<section class="about_container">
-		<figure class="about_imageContainer">
-			<img src="images/bear2.jpg" class="about_image" >
-			
+<body> 
+<h1 class="titulo">Galeria</h1>
+<section class="shop_container" ng-controller="galeryGiftController">
+	<article class="shop_item" ng-repeat="item in items">
+		<h3 class="shop_itemTittle">{{item.gift_tittle}}</h3>
+		<figure class="shop_imageContainer">
+			<img src="{{item.gift_image}}" alt="item shop" class="shop_itemImage">
 		</figure>
-		<article class="container">
-			<p class="container_message"> Gifter es software dedicado a interactuar con los usuarios<br>
-			  a manera, de cambiar la forma de enviar y recibir un regalo.De una forma facil interactiva y personalizada con tecnologia de actuales </p>
-		</article>
-	</section>
-</div>
-<!-- Prueba Angular
-	<div ng-controller="GifterController as giftctl">
-		<h2>{{giftctl.gift.name}}</h2>
-		<h3>{{giftctl.gift.message}}</h3>
-	</div>
-	-->
+		<p class="shop_itemDescription">{{item.gift_message}}</p>
+		<p class="votes">{{item.votes}}</p>
+	</article>
+</section>
 	<footer>
 		<section class="newsForm">
 			<p class="newsForm_message">Resive noticias de nuevos regalos y actualizaciones</p>

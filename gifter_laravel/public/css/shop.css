@@ -141,6 +141,32 @@
 			color: #636363;
 		}
 
+		.votes{
+			margin-bottom: 0;
+			margin-top: auto;
+			margin-left: auto;
+			text-align: center;
+			color: white;
+			font-size: 1.3em;
+			background-color: #A9CF37;
+			width: 140px;
+			height: 35px;
+		}
+
+		.votes:before{
+			content: "*";
+			padding-right: 0.2em;
+		}
+
+		.shop_itemDescription{
+			font-size: 1.2em;
+			text-align: center;
+			width: 40%;
+			margin: auto;
+			margin-right: 0.1em;
+			color: #636363;
+		}
+
 @media all and (max-width: 900px){
 
 .header_menuContainer{

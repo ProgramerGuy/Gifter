@@ -35,6 +35,14 @@ class GiftsContoller extends Controller {
 		return $result;
 	}
 
+	public function getGalery(){
+
+		$result = \DB::table('gifts')
+		->select('*')
+		->where('public','=','1')
+		->get();
+		return $result;
+	}
 	/**
 	 * Display a listing of the resource.
 	 *

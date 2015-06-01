@@ -40,7 +40,7 @@ class Authenticate {
 			}
 			else
 			{
-				return redirect()->guest('resources/views/auth/login');
+				return redirect()->guest('auth/login');
 			}
 		}
 

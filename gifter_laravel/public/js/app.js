@@ -52,4 +52,14 @@
 
 	});
 
+	app.controller('galeryGiftController',function($scope, $http){
+
+		$scope.items = [];
+
+		$http.get('galery').success(function(data){
+			$scope.items = data;
+		});
+
+	});
+
 })();

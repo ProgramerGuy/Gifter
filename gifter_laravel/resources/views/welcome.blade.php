@@ -1,48 +1,49 @@
-<html>
-	<head>
-		<title>Laravel</title>
-		
-		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+@extends('index')
 
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				width: 100%;
-				height: 100%;
-				color: #B0BEC5;
-				display: table;
-				font-weight: 100;
-				font-family: 'Lato';
-			}
-
-			.container {
-				text-align: center;
-				display: table-cell;
-				vertical-align: middle;
-			}
-
-			.content {
-				text-align: center;
-				display: inline-block;
-			}
-
-			.title {
-				font-size: 96px;
-				margin-bottom: 40px;
-			}
-
-			.quote {
-				font-size: 24px;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+@section('content')
+<div class="container">
+	<section class="steps_container">
+		<article class="steps register">
+			<img src="images/Register2.png" alt="" class="step_icon">
+			<p class="steps_iconTittle">Registrate</p>
+			<p class="step_message">
+				Llna el formulario registrate, para disfrutar de esta novedosa app
+			</p>
+		</article>
+		<article class="steps">
+			<img src="images/Bear_icon.png" alt="" class="step_icon">
+			<p class="steps_iconTittle">Crea tu Regalo</p>
+			<p class="step_message">
+				Comienze a crear y personalizar su
+				regalo en nuestro editor
+			</p>
+		</article>
+		<article class="steps">
+			<img src="images/Mail_icon2.png" alt="" class="step_icon">
+			<p class="steps_iconTittle">Envia y Comparte</p>
+			<p class="step_message">
+				Envia tu regalo a esa persona especial
+				y comparte con la comunidad.
+			</p>
+		</article>
+	</section>
+	<section class="video">
+		<article class="video_container">
+			<video class="video" controls>
+	  				<source src="videos/Final_2.mp4" type="video/mp4">
+			</video>
+		</article>
+		<article class="video_shareContainer">
+			<p class="video_shareMessage">Prueba esta nueva experiencia y compartelo con tus amigos</p>
+			<div class="video_share_iconContainer">
+				<img src="" alt="" class="video_share_icon">
+				<img src="" alt="" class="video_share_icon">
+				<img src="" alt="" class="video_share_icon">
+				<img src="" alt="" class="video_share_icon">
+				<img src="" alt="" class="video_share_icon">
 			</div>
-		</div>
-	</body>
-</html>
+		</article>
+	</section>
+</div>
+@endsection
+
