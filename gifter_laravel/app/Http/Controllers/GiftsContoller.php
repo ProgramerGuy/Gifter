@@ -71,7 +71,7 @@ class GiftsContoller extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		$gift = new gift_shop();
+		$gift = new \App\gift_shop();
 		$gift->tittle = $request->tittle;
 		$gift->description = $request->description;
 		$gift->image = $request->image;
