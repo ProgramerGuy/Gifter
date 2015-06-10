@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class gift_shop extends Model {
 
-	protected $table = 'gift_shop';
+	protected $table = 'gift_shops';
 
 	/**
 	 * The attributes that are mass assignable.
