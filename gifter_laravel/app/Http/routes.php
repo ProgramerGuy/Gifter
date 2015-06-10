@@ -22,6 +22,9 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::post('gift_shop', 'GiftsContoller@store');
+Route::delete('gift_shop', 'GiftsContoller@delete');
+
 Route::resource('users','UserController@getUsers');
 Route::resource('shop-items','GiftsContoller@getItems');
 Route::resource('popular','GiftsContoller@getPopular');

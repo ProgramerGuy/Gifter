@@ -68,9 +68,10 @@ class GiftsContoller extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$gift = \App\gifts_shop();
+		$gift->tittle = $request->tittle;
 	}
 
 	/**
