@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Auth;
+use App\gift_shop;
 
 use Illuminate\Http\Request;
 
@@ -70,7 +71,7 @@ class GiftsContoller extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		$gift = new \App\gift_shop();
+		$gift = new gift_shop(Request::all());
 		$gift->tittle = $request->tittle;
 		$gift->description = $request->description;
 		$gift->image = $request->image;
