@@ -3,7 +3,6 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Auth;
-use App\gift_shop;
 
 use Illuminate\Http\Request;
 
