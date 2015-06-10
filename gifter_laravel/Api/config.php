@@ -9,9 +9,9 @@
  */
 
 define("SERVER","localhost");
-define("USER","");
-define("PASS","");
-define("DB","");
+define("USER","root");
+define("PASS","redpanda21");
+define("DB","gifter_db_laravel");
 
 define("USERADMIN","admin");
 define("PASSADMIN","admin");
