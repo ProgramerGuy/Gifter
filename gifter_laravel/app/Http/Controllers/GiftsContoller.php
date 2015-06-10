@@ -125,7 +125,12 @@ class GiftsContoller extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$gift = \App\gift_shop::find($id);
+		$gift->delete();
+
+		return response()->json([
+			"msg"=>"Success"],200
+		);
 	}
 
 }
