@@ -80,7 +80,7 @@ class GiftsContoller extends Controller {
 		$gift->save();
 
 		return response()->json([
-			"msg"->"Success",
+			"msg"=>"Success",
 			"gift" => $gift->id],200
 		);
 	}
