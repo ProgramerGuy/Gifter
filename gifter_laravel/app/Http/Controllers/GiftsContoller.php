@@ -72,6 +72,17 @@ class GiftsContoller extends Controller {
 	{
 		$gift = \App\gifts_shop();
 		$gift->tittle = $request->tittle;
+		$gift->description = $request->description;
+		$gift->image = $request->image;
+		$gift->price = $request->price;
+		$gift->existence = $request->existence;
+		$gift->views = $request->views;
+		$gift->save();
+
+		return response()->json([
+			"msg"->"Success",
+			"gift" => $gift->id],200
+		);
 	}
 
 	/**
